@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Car Runaway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="Music">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <img src="black.png" id="Player" class="hidden" >
+    <img src="road1.png" id="Road1" class="hidden">
+    <img src="road2.png" id="Road2" class="hidden">
+    <img src="red.png" id="Red" class="hidden">
+    <img src="red_inv.png" id="Red_inv" class="hidden">
+    <img src="blue.png" id="Blue" class="hidden">
+    <img src="blue_inv.png" id="Blue_inv" class="hidden">
+    <img src="police.png" id="Police" class="hidden">
+    <img src="police_inv.png" id="Police_inv" class="hidden">
+    <img src="explosion.gif" id="Explosion" class="hidden">
+    
+
+    <div id="menu">
+        <h1>PIXEL CAR RUNAWAY</h1>
+        <button type="button" id="start"><span>START</span></button>
+    </div>
+
+
+    <div id="game">
+    <p id="hp"> Health: </p>
+    <canvas id="canvas" width="500" height="600"></canvas>
+    <div id="group">
+    <p id="score">Score: </p>
+    <button type="button" id="restart">RESTART</button>
+    </div>
+    </div>
+    <div>
+        <img src="Tip.png" class="tip">
+    </div>
+</body>
+<script src="js.js"></script>
+</html>

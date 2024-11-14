@@ -1,0 +1,134 @@
+canvas{
+    border: 2px solid black;
+}
+
+body{
+    text-align: center;
+    background-color: indigo;
+}
+
+.hidden{
+    display: none;
+}
+
+#game
+{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    margin: -350px 0 0 -250px;
+    height: 700px;
+    
+}
+
+#menu{
+    background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm13YWN5OG9iajNrMGZsYjJmaGlmcmJkNmI1YWowZGxpcTdhMTZ3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQhCPAqbcvFSoO05At/giphy-downsized-large.gif");
+    background-size: cover;
+    display: block;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: -150px 0 0 -250px;
+    color:#FFFFFF;
+}
+
+
+#menu img{
+    width: 400px;
+    
+}
+
+#menu button{
+
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    left: 40%;
+    color:#FFFFFF;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    bottom: 0%;
+    
+}
+
+#menu button span{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+}
+
+#menu button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+
+#menu button:hover span {
+    padding-right: 25px;
+}
+
+#menu button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#restart{
+
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    color:#FFFFFF;
+    background: rgba(30, 0, 60, 1);
+    text-align: center;
+    font-weight: 900;
+    opacity: 0.6;
+    cursor: not-allowed;
+
+}
+
+#score{
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    left: 0%;
+    margin-top: 0;
+    font-weight: 900;
+ 
+}
+
+#hp{
+    font-weight: 900;
+}
+
+.tip{
+    display: block;
+    width: 300px;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+
+}
+
+
+#group{
+    float: left;
+    position: absolute;
+    bottom: 6%;
+    width: 500px;
+}
